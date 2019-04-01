@@ -57,7 +57,7 @@ public class SocketClient {
         while (true){
             count++;
             if (count>3){
-                System.out.println("您已连续三次登录失败，程序退出！");
+                System.out.println("您已连续三次登录失败，程序退出！ ");
                 System.exit(0);
             }
             System.out.println("请输入用户名:");
