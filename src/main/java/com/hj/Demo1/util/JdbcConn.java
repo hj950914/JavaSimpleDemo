@@ -41,7 +41,7 @@ public class JdbcConn {
     //关闭
     public static void clostAll(ResultSet rs, PreparedStatement stmt, Connection conn) {
         try {
-            if(rs != null)
+            if (rs != null)
                 rs.close();
             if (stmt != null)
                 stmt.close();
@@ -52,5 +52,15 @@ public class JdbcConn {
         }
     }
 
+    public static void clostAll(PreparedStatement stmt, Connection conn) {
+        try {
+            if (stmt != null)
+                stmt.close();
+            if (conn != null)
+                conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

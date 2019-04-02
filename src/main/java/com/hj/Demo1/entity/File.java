@@ -16,6 +16,11 @@ public class File implements Serializable {
     public File() {
     }
 
+    public File(String fname, byte[] fcontent) {
+        this.fname = fname;
+        this.fcontent = fcontent;
+    }
+
     public int getFid() {
         return fid;
     }

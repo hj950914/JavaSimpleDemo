@@ -45,4 +45,14 @@ public class CommandTransfer implements Serializable {
     public void setResult(String result) {
         this.result = result;
     }
+
+    @Override
+    public String toString() {
+        return "CommandTransfer{" +
+                "cmd='" + cmd + '\'' +
+                ", data=" + data +
+                ", flag=" + flag +
+                ", result='" + result + '\'' +
+                '}';
+    }
 }

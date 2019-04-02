@@ -18,7 +18,7 @@ public class FileService {
     private ResultSet rs = null;
 
     //上传文件
-    public void FileSave(File file) throws SQLException {
+    public void FileSave(File file) throws SQLException, ClassNotFoundException {
         //获取数据库连接
         connection = JdbcConn.getConnection();
         String sql = "insert into file (fname,fcontent) values(?,?)";
@@ -30,6 +30,6 @@ public class FileService {
         //执行
         ps.executeUpdate();
         //关闭
-        JdbcConn.clostAll(rs,ps,connection);
+        //JdbcConn.clostAll(rs,ps,connection);
     }
 }
