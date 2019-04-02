@@ -8,4 +8,5 @@
 项目介绍
 ```
 package com.hj.Demo1包---简单文件上传器
+package com.hj.Demo1包---c3p0连接池使用
 ```

@@ -26,6 +26,8 @@
         <!--dependency version-->
         <junit.version>5.4.0</junit.version>
         <jdbc.version>8.0.11</jdbc.version>
+        <c3p0.version>0.9.5.2</c3p0.version>
+        <commons-dbutils>1.6</commons-dbutils>
     </properties>
 
     <dependencies>
@@ -41,8 +43,22 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${jdbc.version}</version>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>${c3p0.version}</version>
+        </dependency>
+
+        <!--DB工具包-->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>${commons-dbutils}</version>
+        </dependency>
+
+
+    </dependencies>
 
 
     <build>
