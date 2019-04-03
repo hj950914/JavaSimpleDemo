@@ -20,7 +20,7 @@ public class LombokUserTest {
     void testLombok() {
         LombokUser lombokUser = new LombokUser();
         lombokUser.setUsername("hj");
-        lombokUser.setPassword("123");
+        lombokUser.setPassword("1233");
         System.out.println(lombokUser);
     }
 }
